@@ -1,0 +1,12 @@
+#ignore folders
+
+.vs
+bin
+obj
+nugetPublish
+
+
+# folders
+node_modules
+bin
+#.vscode
