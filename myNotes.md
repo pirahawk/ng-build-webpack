@@ -76,3 +76,31 @@ import {APP_BASE_HREF} from '@angular/common';
   ],
 
 ```
+
+# tsconfig.json
+
+```
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+
+    "sourceMap": true,
+    "emitDecoratorMetadata": true, // IMPORTANT THIS ONE OTHERWISE DI DOES NOT WORK
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
+}
+```
